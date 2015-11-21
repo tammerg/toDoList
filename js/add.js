@@ -7,6 +7,7 @@ $(document).ready(function (){
     var isDuplicate;
 
     newWord = $(".newWord").val();
+    newTime = $(".newTime").val();  
 
     $("td.word-td").each(function(){
       if($(this).text() === newWord) {
@@ -22,10 +23,11 @@ $(document).ready(function (){
 
     newRow = $("<tr>");
     wordTd = $("<td>").addClass("word-td").append(newWord);
+    timeTd = $("<td>").addClass("word-td").append(newTime); 
     deleteButton = $("<button>").addClass("btn btn-danger buttonRemove").append("Remove");
     deleteTd = $("<td>").append(deleteButton);
 
-    newRow.append(wordTd).append(deleteTd);
+    newRow.append(wordTd).append(timeTd).append(deleteTd); 
 
     $("tbody").append(newRow);
     $("#newWord").val("")
