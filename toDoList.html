@@ -11,17 +11,24 @@
 </h3>
 <table class="table table-responsive myTable" id="myTable">
   <thead>
+    <th>Complete?</th>
     <th>Task to Complete</th>
     <th>Time to Complete?</th>
     <th>Remove?</th>
   </thead>
   <tbody>
     <tr>
+      <td>
+        <div class="checkbox">
+          <label><input type="checkbox" value=""></label>
+        </div>
+      </td>
       <td>Learn jQuery</td>
-      <td>Hopefully not to long</td>
+      <td>Hopefully not too long</td>
       <td><button class="btn btn-danger buttonRemove">Remove</button></td>
     </tr>
     <tr>
+      <td><input type="checkbox" class="newCheck" value=""></td>
       <td><input type="text" class="newWord" placeholder="New task"></td>
       <td><input type="text" class="newTime" placeholder="How long do you have?"></td>
       <td><button class="btn btn-primary buttonAdd">Add Task</button></td>
