@@ -1,5 +1,5 @@
 $(document).ready(function (){
-  $(".btn btn-danger buttonRemove").on("click", function(){
+  $(document).on("click",".btn-danger", function(){
     $(this).parents("tr").remove();
       });
   });
