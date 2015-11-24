@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/darkly/bootstrap.css" crossorigin="anonymous">
-  <link
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/darkly/bootstrap.css" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
   <title>To Do List</title>
 </head>
 <body>
-<h3>
-  <strong>To Do List</strong>
-</h3>
-<table class="table table-responsive myTable" id="myTable">
-  <thead>
-    <th>Complete?</th>
-    <th>Task to Complete</th>
-    <th>Time to Complete?</th>
-    <th>Remove?</th>
-  </thead>
-  <tbody>
-    <tr>
-    </tr>
-    <tr>
-      <td><input type="checkbox" class="newCheck" value=""></td>
-      <td><input type="text" class="newWord" placeholder="New task"></td>
-      <td><input type="text" class="newTime" placeholder="How long do you have?"></td>
-      <td><button class="btn btn-primary buttonAdd">Add Task</button></td>
-    </tr>
-  </tbody>
-</table>
+  <h3 class="header">
+    <strong>To Do List</strong>
+  </h3>
+  <table class="table table-responsive myTable col-xs-offset2" id="myTable">
+    <thead>
+      <th>Complete?</th>
+      <th>Task to Complete</th>
+      <th>Time to Complete?</th>
+      <th>Remove?</th>
+    </thead>
+    <tbody>
+      <tr>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="newCheck col-xs-offset-2" value=""></td>
+        <td><input type="text" class="newWord" placeholder="New task"></td>
+        <td><input type="text" class="newTime" placeholder="How long do you have?"></td>
+        <td><button class="btn btn-primary buttonAdd">Add Task</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <footer>
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title">Completed!</h3>
+      </div>
+        <div class="panel-body"></div>             
+    </div>
+  </footer>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
 <script type="text/javascript" src="js/add.js"></script>
 <script type="text/javascript" src="js/remover.js"></script>

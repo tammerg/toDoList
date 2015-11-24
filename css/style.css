@@ -1,0 +1,15 @@
+.done{
+  text-decoration: line-through;
+}
+
+.header {
+  text-decoration: underline;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
